@@ -76,7 +76,7 @@ app
 
       socket.on("save-version", async ({ snippetId, code }) => {
         const response = await fetch(
-          `http://localhost:3000/api/snippets/${snippetId}/versions`,
+          `https://codesh.onrender.com/api/snippets/${snippetId}/versions`,
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },

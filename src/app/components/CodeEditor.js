@@ -9,7 +9,7 @@ import VersionsList from "./VersionsList";
 import ChatBox from "./ChatBox";
 import EditorContainer from "./EditorContainer";
 
-const socket = io("http://localhost:3000");
+const socket = io("https://codesh.onrender.com");
 
 export default function CodeEditor({ snippetId, initialCode, onSubmit }) {
   const [title, setTitle] = useState("");
