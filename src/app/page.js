@@ -41,7 +41,7 @@ export default async function Home({ searchParams }) {
       )}
       <div className="grid gap-4 mt-6">
         {snippets.map((snippet) => (
-          <a href={`/id=${snippet.id}`} key={snippet.id}>
+          <a href={`/?id=${snippet.id}`} key={snippet.id}>
             <SnippetCard snippet={snippet} />
           </a>
         ))}
